@@ -1,5 +1,6 @@
 # Real-Time-Vocabulary-Quiz
-## Requirement: This feature will allow users to answer questions in real-time, compete with others, and see their scores updated live on a leaderboard.
+## Requirement: 
+This feature will allow users to answer questions in real-time, compete with others, and see their scores updated live on a leaderboard.
 
 ## Acceptance Criteria
 
