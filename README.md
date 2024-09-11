@@ -23,3 +23,20 @@ This feature will allow users to answer questions in real-time, compete with oth
    - **Component Description**: Describe each component's role in the system.
    - **Data Flow**: Explain how data flows through the system from when a user joins a quiz to when the leaderboard is updated.
    - **Technologies and Tools**: List and justify the technologies and tools chosen for each component.
+
+## System Design Proposal
+
+### Extended requirement assumption
+1. The players are not distributed across the globe - properly they are based on the same country
+2. The system is able to support thousands of concurrent players & number of Active players join the game around 65,000
+4. Read:Write ratio: 1:5
+5. The players can view the top 5/10 players on the leaderboard in real-time
+6. A leaderboard should display the current standings of all participants => The player can view another specific player’s rank and score
+7. As players submit answers, their scores should be updated in real-time => receive score updates through push notifications
+### Non-functional requirement
+1. Scalability
+2. Performance
+3. Reliability
+4. Maintainability
+5. Monitoring and Observability
+
