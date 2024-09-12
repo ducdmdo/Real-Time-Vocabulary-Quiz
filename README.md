@@ -27,7 +27,7 @@ This feature will allow users to answer questions in real-time, compete with oth
 ## System Design Proposal
 
 ### Extended requirement assumption/clarification
-1. The players are not distributed across the globe - properly they are based on the same country
+1. ~~The players are not distributed across the globe - properly they are based on the same country~~ => Players are distributed across the globe as X company is targeting international market
 2. The system is able to support thousands of concurrent players & number of Active players join the game around 65,000
 4. Read:Write ratio: 1:5
 5. The players can view the top 5/10 players on the leaderboard in real-time
