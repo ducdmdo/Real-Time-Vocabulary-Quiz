@@ -28,14 +28,24 @@ This feature will allow users to answer questions in real-time, compete with oth
 
 ### Extended assumption/requirement
 1. ~~The players are not distributed across the globe - properly they are based on the same country~~ => Players are distributed across the globe as X company is targeting international market
-2. Scale of the system: The system is able to support thousands of concurrent players & number of Active players join the game around 65,000
+2. Scale of the system:
+   - Each player can generate 10 requests/minute
 3. Scale of data: lenghth of questions
-4. Read:Write ratio: 1:5
-5. How fast is enought & SLA:
-6. How much downtime can we tolerate:
-7. The players can view the top 5/10 players on the leaderboard in real-time
-8. A leaderboard should display the current standings of all participants => The player can view another specific player’s rank and score
-9. As players submit answers, their scores should be updated in real-time => receive score updates through push notifications
+   - Assuming each question is ~1KB in size => estimate to support 10GB amount of questions (~10 million questions)
+5. Read:Write ratio
+   - During active gameplay, reads (fetching questions, leaderboard) are more frequent than writes (submitting answers, updating scores)
+      Estimation: 10:1
+6. How fast is enought & SLA:
+   - 99.99% system uptime
+8. How much downtime can we tolerate:
+   - zero downtime
+   - Unplanned downtime could occur due to:
+   -    Major cloud provider outage: ~4 hours/year (99.95% uptime)
+   -    Database failover: ~5 minutes/occurrence, maybe 2-3 times/year
+   -    Critical bug: rollback strategies
+10. The players can view the top 5/10 players on the leaderboard in real-time
+11. A leaderboard should display the current standings of all participants => The player can view another specific player’s rank and score
+12. As players submit answers, their scores should be updated in real-time => receive score updates through push notifications
 #### Non-functional requirement
 1. Scalability
 2. Performance
