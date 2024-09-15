@@ -129,4 +129,62 @@ IV.Real-time updates:
 > 1. Client receives updates via WebSocket connection.
 > 2. Leaderboard component in the client updates in real-time.
 ### Technologies and Tools
+> [!NOTE]
+> **Frontend**: React (React Native for mobile)
+> Justification: Component-based architecture, efficient rendering, large ecosystem.
 
+> [!NOTE]
+> **CDN**: Cloudflare
+> Justification: Global presence, easy setup, DDoS protection.
+
+> [!NOTE]
+> **Load Balancer**: AWS ELB
+> Justification: Scalable, integrates well with AWS services, supports health checks.
+
+> [!NOTE]
+>** API Server**: Node.js/Express.js
+> Justification: Lightweight, flexible, large ecosystem of middleware.
+
+> [!NOTE]
+> **WebSocket**: Socket.io
+> Justification: Reliable real-time communication, fallback options for older browsers.
+
+> [!NOTE]
+> **Authentication**: JWT
+> :Stateless, scalable, secure for token-based authentication.
+
+> [!NOTE]
+> **Databases**: PostgreSQL
+> : ACID compliant, supports complex queries, extensible.
+
+> [!NOTE]
+> **Caching**: Redis
+> : In-memory data structure store, supports complex data types, pub/sub mechanism.
+
+> [!NOTE]
+> **Message Queue**: Kafka
+> : High-throughput, distributed, fault-tolerant.
+
+> [!NOTE]
+> **Containerization**: Docker
+> : Consistent environments, easy scaling and deployment.
+
+> [!NOTE]
+> **Orchestration**: Kubernetes
+> : Automated deployment, scaling, and management of containerized applications.
+
+> [!NOTE]
+> **CI/CD**: GitHub
+> : Automates building, testing, and deployment processes.
+
+> [!NOTE]
+> **API Documentation**: Swagger
+> : Interactive documentation, supports OpenAPI specification.
+
+> [!NOTE]
+> **Monitoring**: New Relic/Datadog, ELK Stack, Prometheus, Grafana
+> : Comprehensive monitoring suite covering APM, logging, and metrics visualization.
+
+> [!NOTE]
+> **Database Migration**: Flyway
+> : Version control for databases, supports SQL and Java migrations.
