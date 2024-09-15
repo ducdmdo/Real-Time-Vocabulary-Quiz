@@ -35,7 +35,7 @@ This feature will allow users to answer questions in real-time, compete with oth
 5. Read:Write ratio
    - During active gameplay, reads (fetching questions, leaderboard) are more frequent than writes (submitting answers, updating scores)
       Estimation: 10:1
-6. How fast is enought & SLA:
+6. Estimated SLA:
    - 99.99% system uptime
 8. How much downtime can we tolerate:
    - zero downtime
