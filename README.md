@@ -93,7 +93,7 @@ https://miro.com/welcomeonboard/ckdhNUV1b1RBOEFuMk9OV0FyWEE4bk52djd1RkRNRnJGazl5
 > [!NOTE] Processes failed operations from the Retry Queue, attempting to resolve them.
 18. APM (New Relic/Datadog):
 > [!NOTE] Monitors application performance, helping identify and diagnose issues.
-19. ELK Stack:
+19. ELK Stack (Elasticsearch, Logstash, Kibana) or a cloud-based solution like AWS CloudWatch
 > [!NOTE] Collects, processes, and visualizes log data for system monitoring and troubleshooting.
 20. Prometheus:
 > [!NOTE] Collects and stores time-series data for system metrics.
