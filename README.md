@@ -102,5 +102,31 @@ This feature will allow users to answer questions in real-time, compete with oth
 22. Flyway:
 > [!NOTE] Manages database migrations, ensuring consistent database schema across environments.
 ### Data Flow
+I.  User joins a quiz:
+   > [!IMPORTANT]
+   > 1. Client sends request to API Gateway via Load Balancer.
+   > 2. API Gateway routes request to Quiz Service.
+   > 3. Quiz Service retrieves quiz data from Redis Cache Quiz or Quiz PostgreSQL DB.
+   > 4. Quiz data is sent back to the client.
+
+II. User answers questions:
+> [!IMPORTANT]
+> 1. Client sends answers to API Gateway.
+> 2. Quiz Service receives answers and publishes to Kafka Queue.
+> 3. Scoring Service consumes message from Kafka, calculates score.
+> 4. Score is published back to Kafka Queue.
+
+
+III. Leaderboard update:
+> [!IMPORTANT]
+> 1. Leaderboard Service consumes score update from Kafka Queue.
+> 2. Updates Redis Cache Leaderboard and Leaderboard PostgreSQL DB.
+> 3. Publishes leaderboard update to Kafka Queue.
+> 4. WebSocket Server consumes leaderboard update and broadcasts to connected clients.
+
+IV.Real-time updates:
+> [!IMPORTANT]
+> 1. Client receives updates via WebSocket connection.
+> 2. Leaderboard component in the client updates in real-time.
 ### Technologies and Tools
 
