@@ -128,7 +128,7 @@ IV.Real-time updates:
 > [!IMPORTANT]
 > 1. Client receives updates via WebSocket connection.
 > 2. Leaderboard component in the client updates in real-time.
-### Technologies and Tools
+### Technologies and Tools. (Notes: building on the cloud is 100% worth consideration which can be explored down the line)
 > [!NOTE]
 > **Frontend**: React (React Native for mobile)
 > Justification: Component-based architecture, efficient rendering, large ecosystem.
