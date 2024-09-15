@@ -56,9 +56,51 @@ This feature will allow users to answer questions in real-time, compete with oth
 ### Capacity estimation
 
 ### High Level Design
-### Database Design
-### API Design
 ### Components Design
+1. Client Browser:
+> [!NOTE] The user interface where players interact with the quiz application.
+2. Cloudflare CDN:
+> [!NOTE] Caches and serves static assets globally, reducing latency for users.
+3. AWS Load Balancer:
+> [!NOTE] Distributes incoming traffic across multiple API servers for better performance and reliability.
+4. API Gateway/Express:
+> [!NOTE] Handles HTTP requests, routes them to appropriate services, and manages API endpoints.
+5. WebSocket Server:
+> [!NOTE] Manages real-time bidirectional communication between the server and clients for instant updates.
+6. Authentication Service:
+> [!NOTE] Manages user registration, login, and token-based authentication.
+7. Quiz Service:
+> [!NOTE] Handles quiz-related operations including creating, retrieving, and submitting quizzes.
+8. Scoring Service:
+> [!NOTE] Calculates and updates user scores based on quiz submissions.
+9. Leaderboard Service:
+> [!NOTE] Manages and updates the leaderboard based on user scores.
+10. Redis Cache Quiz:
+> [!NOTE] Caches quiz questions for faster retrieval and reduced database load.
+11. Redis Cache Leaderboard:
+> [!NOTE] Stores real-time leaderboard data for quick access and updates.
+12. Redis Cache Progress:
+> [!NOTE] Stores user progress in quizzes to handle disconnections and rejoin scenarios.
+13. Quiz PostgreSQL DB:
+> [!NOTE] Persistent storage for quiz data, questions, and user information.
+14. Leaderboard PostgreSQL DB:
+> [!NOTE] Stores historical leaderboard data for long-term analysis and retrieval.
+15. Kafka Queue:
+> [!NOTE] Manages asynchronous communication between services, ensuring scalability and fault tolerance.
+16. Retry Queue:
+> [!NOTE] Stores failed operations for later retry, improving system reliability.
+17. Retry Worker:
+> [!NOTE] Processes failed operations from the Retry Queue, attempting to resolve them.
+18. APM (New Relic/Datadog):
+> [!NOTE] Monitors application performance, helping identify and diagnose issues.
+19. ELK Stack:
+> [!NOTE] Collects, processes, and visualizes log data for system monitoring and troubleshooting.
+20. Prometheus:
+> [!NOTE] Collects and stores time-series data for system metrics.
+21. Grafana:
+> [!NOTE] Visualizes metrics from Prometheus, providing real-time system dashboards.
+22. Flyway:
+> [!NOTE] Manages database migrations, ensuring consistent database schema across environments.
 ### Data Flow
 ### Technologies and Tools
 
