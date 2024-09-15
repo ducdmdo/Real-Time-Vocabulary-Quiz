@@ -54,7 +54,7 @@ This feature will allow users to answer questions in real-time, compete with oth
 5. Monitoring and Observability
 
 ### High Level Design
-https://miro.com/welcomeonboard/ckdhNUV1b1RBOEFuMk9OV0FyWEE4bk52djd1RkRNRnJGazl5WlNTemg4N3EwWlczRTc0ZUFIVmRzZWFidno2S3wzNDU4NzY0NTI4OTUyNzg0MjE3fDI=?share_link_id=678057722615
+https://miro.com/welcomeonboard/ckdhNUV1b1RBOEFuMk9OV0FyWEE4bk52djd1RkRNRnJGazl5WlNTemg4N3EwWlczRTc0ZUFIVmRzZWFidno2S3wzNDU4NzY0NTI4OTUyNzg0MjE3fDI=?share_link_id=161095760611
 ![Screenshot of real-time quiz leaderboard sytem designed by Duc Do](https://miro.com/welcomeonboard/ckdhNUV1b1RBOEFuMk9OV0FyWEE4bk52djd1RkRNRnJGazl5WlNTemg4N3EwWlczRTc0ZUFIVmRzZWFidno2S3wzNDU4NzY0NTI4OTUyNzg0MjE3fDI=?share_link_id=678057722615)
 ### Components Design
 1. Client Browser:
