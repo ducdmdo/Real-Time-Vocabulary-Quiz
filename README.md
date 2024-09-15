@@ -128,22 +128,23 @@ IV.Real-time updates:
 > [!IMPORTANT]
 > 1. Client receives updates via WebSocket connection.
 > 2. Leaderboard component in the client updates in real-time.
-### Technologies and Tools. (Notes: building on the cloud is 100% worth consideration which can be explored down the line)
+### Technologies and Tools. 
+(Notes: building on the cloud is 100% worth consideration which can be explored down the line)
 > [!NOTE]
 > **Frontend**: React (React Native for mobile)
-> Justification: Component-based architecture, efficient rendering, large ecosystem.
+> : Component-based architecture, efficient rendering, large ecosystem.
 
 > [!NOTE]
 > **CDN**: Cloudflare
-> Justification: Global presence, easy setup, DDoS protection.
+> : Global presence, easy setup, DDoS protection.
 
 > [!NOTE]
 > **Load Balancer**: AWS ELB
-> Justification: Scalable, integrates well with AWS services, supports health checks.
+> : Scalable, integrates well with AWS services, supports health checks.
 
 > [!NOTE]
 >** API Server**: Node.js/Express.js
-> Justification: Lightweight, flexible, large ecosystem of middleware.
+> : Lightweight, flexible, large ecosystem of middleware.
 
 > [!NOTE]
 > **WebSocket**: Socket.io
