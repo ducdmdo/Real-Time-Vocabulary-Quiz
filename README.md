@@ -26,7 +26,7 @@ This feature will allow users to answer questions in real-time, compete with oth
 
 ## System Design Proposal
 
-### Extended assumption/requirement
+### Extended assumption/requirement - capacity estimation
 1. ~~The players are not distributed across the globe - properly they are based on the same country~~ => Players are distributed across the globe as X company is targeting international market
 2. Scale of the system:
    - Each player can generate 10 requests/minute
@@ -53,9 +53,8 @@ This feature will allow users to answer questions in real-time, compete with oth
 4. Maintainability
 5. Monitoring and Observability
 
-### Capacity estimation
-
 ### High Level Design
+![Screenshot of real-time quiz leaderboard sytem designed by Duc Do](https://miro.com/welcomeonboard/ckdhNUV1b1RBOEFuMk9OV0FyWEE4bk52djd1RkRNRnJGazl5WlNTemg4N3EwWlczRTc0ZUFIVmRzZWFidno2S3wzNDU4NzY0NTI4OTUyNzg0MjE3fDI=?share_link_id=678057722615)
 ### Components Design
 1. Client Browser:
 > [!NOTE] The user interface where players interact with the quiz application.
