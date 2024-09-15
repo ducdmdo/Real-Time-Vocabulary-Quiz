@@ -37,12 +37,12 @@ This feature will allow users to answer questions in real-time, compete with oth
       Estimation: 10:1
 6. Estimated SLA:
    - 99.99% system uptime
-8. How much downtime can we tolerate:
-   - zero downtime
+8. Downtime:
+   - Assumption we target to achieve - zero downtime
    - Unplanned downtime could occur due to:
-   -    Major cloud provider outage: ~4 hours/year (99.95% uptime)
-   -    Database failover: ~5 minutes/occurrence, maybe 2-3 times/year
-   -    Critical bug: rollback strategies
+     - 1.  Major cloud provider outage: ~4 hours/year (99.95% uptime)
+     - 2. Database failover: ~5 minutes/occurrence, maybe 2-3 times/year
+     - 3. Critical bug: rollback strategies
 10. The players can view the top 5/10 players on the leaderboard in real-time
 11. A leaderboard should display the current standings of all participants => The player can view another specific player’s rank and score
 12. As players submit answers, their scores should be updated in real-time => receive score updates through push notifications
