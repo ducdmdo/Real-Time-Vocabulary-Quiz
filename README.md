@@ -28,7 +28,7 @@ This feature will allow users to answer questions in real-time, compete with oth
 
 ### Extended assumption/requirement - capacity estimation
 1. ~~The players are not distributed across the globe - properly they are based on the same country~~ => Players are distributed across the globe as X company is targeting international market
-2. Scale of the system: we definitely should start with something small, assumption in this homework - we target something big
+2. Scale of the system: we definitely should start with something small, assuming in this homework - we target something big
    - Each player can generate 10 requests/minute
    - Target ~5000 players per session
 3. Scale of data: lenghth of questions
