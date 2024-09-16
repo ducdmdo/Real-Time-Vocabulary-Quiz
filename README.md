@@ -71,7 +71,7 @@ https://miro.com/welcomeonboard/ckdhNUV1b1RBOEFuMk9OV0FyWEE4bk52djd1RkRNRnJGazl5
 6. Authentication Service:
 > [!NOTE] Manages user registration, login, and token-based authentication.
 7. Quiz Service:
-> [!NOTE] Handles quiz-related operations including creating, retrieving, and submitting quizzes.
+> [!NOTE] Handles quiz-related operations including retrieving, and submitting quizzes.
 8. Scoring Service:
 > [!NOTE] Calculates and updates user scores based on quiz submissions.
 9. Leaderboard Service:
